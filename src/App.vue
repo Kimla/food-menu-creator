@@ -6,49 +6,42 @@
       <div class="FoodMenu__inputHolder">
         <label for="monday">Måndag</label>
         <input id="monday" name="monday" v-model="menus[currentMenu].monday.main" placeholder="Husman...">
-        <br>
         <input id="monday" name="monday" v-model="menus[currentMenu].monday.secondary" placeholder="Pasta...">
       </div>
 
       <div class="FoodMenu__inputHolder">
         <label for="tuesday">Tisdag</label>
         <input id="tuesday" name="tuesday" v-model="menus[currentMenu].tuesday.main" placeholder="Husman...">
-        <br>
         <input id="tuesday" name="tuesday" v-model="menus[currentMenu].tuesday.secondary" placeholder="Pasta...">
       </div>
 
       <div class="FoodMenu__inputHolder">
         <label for="wednesday">Onsdag</label>
         <input id="wednesday" name="wednesday" v-model="menus[currentMenu].wednesday.main" placeholder="Husman...">
-        <br>
         <input id="wednesday" name="wednesday" v-model="menus[currentMenu].wednesday.secondary" placeholder="Pasta...">
       </div>
 
       <div class="FoodMenu__inputHolder">
         <label for="thursday">Torsdag</label>
         <input id="thursday" name="thursday" v-model="menus[currentMenu].thursday.main" placeholder="Husman...">
-        <br>
         <input id="thursday" name="thursday" v-model="menus[currentMenu].thursday.secondary" placeholder="Pasta...">
       </div>
 
       <div class="FoodMenu__inputHolder">
         <label for="friday">Fredag</label>
         <input id="friday" name="friday" v-model="menus[currentMenu].friday.main" placeholder="Husman...">
-        <br>
         <input id="friday" name="friday" v-model="menus[currentMenu].friday.secondary" placeholder="Pasta...">
       </div>
 
       <div class="FoodMenu__inputHolder">
         <label for="saturday">Lördag</label>
         <input id="saturday" name="saturday" v-model="menus[currentMenu].saturday.main" placeholder="Husman...">
-        <br>
         <input id="saturday" name="saturday" v-model="menus[currentMenu].saturday.secondary" placeholder="Pasta...">
       </div>
 
       <div class="FoodMenu__inputHolder">
         <label for="sunday">Söndag</label>
         <input id="sunday" name="sunday" v-model="menus[currentMenu].sunday.main" placeholder="Husman...">
-        <br>
         <input id="sunday" name="sunday" v-model="menus[currentMenu].sunday.secondary" placeholder="Pasta...">
       </div>
 
@@ -127,7 +120,8 @@ export default {
 <style lang="scss">
 @import "~normalize.css/normalize";
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -231,6 +225,14 @@ textarea {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.25s;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:focus {
+      border-color: #3f51b5;
+    }
   }
 }
 </style>
