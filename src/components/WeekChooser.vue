@@ -57,5 +57,8 @@ export default {
   &__center {
     margin: 0 20px;
   }
+  &__arrow {
+    line-height: 0;
+  }
 }
 </style>
