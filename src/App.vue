@@ -205,9 +205,10 @@ textarea {
 }
 
 .FoodMenu {
-  padding: 50px 0;
-  width: 600px;
+  padding: 50px 15px;
+  width: 630px;
   margin: 0 auto;
+  max-width: 100%;
   &__inputHolder {
     margin-bottom: 20px;
   }
